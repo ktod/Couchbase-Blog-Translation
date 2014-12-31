@@ -1,6 +1,9 @@
 #Couchbase JCache Implementation Developer Preview 1
 原文
 http://blog.couchbase.com/jcache-dp1
+著者
+Simon Baslé
+
 
 On behalf of the SDK Engineering Team, I'm happy to announce that we've worked on an implementation of the JCache specification (JSR107) and so a developer preview is in order!
 SDKエンジニアリングチームを代表して、私は、JCache specification(JSR107)の実装が完了し、デベロッパープレビューを利用可能になったことをアナウンスいたします。
