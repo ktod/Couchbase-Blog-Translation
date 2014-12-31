@@ -3,6 +3,7 @@
 http://blog.couchbase.com/jcache-dp1
 
 On behalf of the SDK Engineering Team, I'm happy to announce that we've worked on an implementation of the JCache specification (JSR107) and so a developer preview is in order!
+SDKエンジニアリングチームを代表して、私は、JCache specification(JSR107)の実装が完了し、デベロッパープレビューを利用可能になったことをアナウンスいたします。
 
 The JCache specification allows developers to build their applications around a standard API for Caching, swapping implementations with minimum effort. This implementation will rely on Couchbase Server and the 2.0 Java SDK to perform caching in an efficient and performant manner.
 
