@@ -126,9 +126,10 @@ Once that is the case, the following snippet can be run:
 Note that cache managers are identified by an URI and a ClassLoader, and are only created if no previous CacheManager was registered for the same identifiers (otherwise the method returns the existing manager).
 キャッシュマネージャは、URIとClassLoaderにより特定され、そして前述のCacheManagerは同じ識別子のために登録される(さもなければ、このメソッドは現存するマネージャを返却します)ことを留意してください。
 
-##Customizing The Way Caching Is Done
+##Customizing The Way Caching Is Done キャッシング方法のカスタマイズ
 
 We saw that by default, the caching implementation tries to connect to a cluster reachable on localhost, and that we can use CouchbaseConfiguration.builder("cacheName").build() as a default for the configuration of a cache. But was can we customize through CouchbaseConfiguration?
+デフォルトにみられるように、キャッシングの実装は、ローカルホストの到達可能なクラスタに接続を試みます。そして、CouchbaseConfiguration.builder("cacheName").build()
 
 ##Common Settings in the JCache API
 
