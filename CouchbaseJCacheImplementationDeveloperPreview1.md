@@ -58,7 +58,7 @@ pom.xmlに以下の依存関係を追記します:
 
 さらに関心をお持ちの方ならば、githubから直接最新のコード(https://github.com/couchbaselabs/couchbase-java-cache)を取得してビルドすることもできます。
 
-##A Short Overview
+##概要
 
 In JCache, a CachingProvider is resolved and used to obtain a CacheManager, in turn used to create Caches. Each cache can be configured using a CacheConfiguration.
 
