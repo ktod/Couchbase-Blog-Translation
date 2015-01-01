@@ -9,7 +9,9 @@ SDKエンジニアリングチームを代表して、私は、JCache specificat
 JCache specificaton は、開発者がアプリケーションの開発に際し、キャッシングに関する標準APIを使用することを可能にします。
 本実装は、Couchbase Server及びJava SDK 2.0の使用を前提として、効率的かつ高性能のキャッシングの（仕組み）を可能にするものです。
 
-We want developers to have a taste of what's to come and allow them to give feedback and suggestions early in the process. Note that this is by no mean a finished implementation, as quite a few things are still work in progress, but basic operations and configuration are functional.
+私達は、この初期プロセスにおいて、開発者の皆様にお試しいただき、本プロダクトに関しフィードバック及び提案を受け付けることを希望いたします。
+これは、本実装が、完全に終了したということを意味することではなく、いくつかの事項についてはなお作業の途上にありますが、基本的なオペレーションや設定は機能している状態であることにご留意ください。
+
 
 Let's discover how to use this implementation!
 
