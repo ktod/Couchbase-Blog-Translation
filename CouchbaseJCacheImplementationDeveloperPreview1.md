@@ -18,7 +18,7 @@ JCache specificaton は、開発者がアプリケーションの開発に際し
 
 ##利用方法
 Maven Centralにて公開する予定ですが、現時点では、Couchbase JCache implemaentationは、Couchbase社のMavenレポジトリより利用することができます。
-pom.xmlに以下の依存関係を追記します:
+`pom.xml`に以下の依存関係を追記します:
 
      <dependencies>
          <dependency>
@@ -59,42 +59,24 @@ CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketに�
 
 コードサンプル:
 
-
-`CouchbaseCachingProvider cachingProvider = new CouchbaseCachingProvider();`
-
-`//if your cluster has no localhost node, customize the bootstrap list`
-
-`//cachingProvider.setBootstrap("192.168.1.2", "node3.mydomain.org");`
-
-`//if you already use the Java SDK somewhere else in your application, you should reuse Environment`
-
-`//cachingProvider.setEnvironment(myCouchbaseEnvironmentUsedSomewhereElse);`
-
-``
-
-`//create a cache manager identified by the default URI and ClassLoader`
-
-`CouchbaseCacheManager cacheManager = cachingProvider.getCacheManager();`
-
-``
-
-`//create a cache named myFirstCache`
-
-`CouchbaseCache<String, String> cache = cacheManager.createCache("myFirstCache",` 
-
-`CouchbaseConfiguration.builder("myFirstCache").build());`
-
-``
-
-`//cache a String`
-
-`cache.put("myKey", "myValue");`
-
-``
-
-`//get it back from the cache`
-
-`String inCache = cache.get("myKey");`
+    CouchbaseCachingProvider cachingProvider = new CouchbaseCachingProvider();
+    //if your cluster has no localhost node, customize the bootstrap list
+    //cachingProvider.setBootstrap("192.168.1.2", "node3.mydomain.org");
+    //if you already use the Java SDK somewhere else in your application, you should reuse Environment
+    //cachingProvider.setEnvironment(myCouchbaseEnvironmentUsedSomewhereElse);
+    
+    //create a cache manager identified by the default URI and ClassLoader
+    CouchbaseCacheManager cacheManager = cachingProvider.getCacheManager();
+    
+    //create a cache named myFirstCache
+    CouchbaseCache<String, String> cache = cacheManager.createCache("myFirstCache",
+    CouchbaseConfiguration.builder("myFirstCache").build());
+    
+    //cache a String
+    cache.put("myKey", "myValue");
+    
+    //get it back from the cache
+    String inCache = cache.get("myKey");
 
 
 このキャッシュマネージャは、URIとClassLoaderにより特定され、そしてこれまでに同じ識別子のために登録されたCacheManagerが無い場合にのみ生成されることに留意してください。(さもなければ、このメソッドは現存するマネージャを返却します)
