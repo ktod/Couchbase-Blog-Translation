@@ -1,6 +1,7 @@
-原文:
+原文
 http://blog.couchbase.com/couchbase-mobile-holiday-mini-hack-challenge
-原著者:
+
+原著者
 Wayne Carter
 
 
