@@ -63,26 +63,16 @@ pom.xmlに以下の依存関係を追記します:
 JCacheでは、CachingProviderは、キャッシュの生成時にCacheManagerを取得するために使用されます。
 各キャッシュは、CacheConfigurationを使用して設定されます。
 
-This implementation relies on the Cluster and Bucket introduced in the Java SDK 2.0.0. In order to correctly configure the underlying bucket, a CouchbaseConfiguration must be used in this implementation (but note that CouchbaseConfiguration.builder().build() should provide sane defaults, see below).
-本プロダクトでは、Java SDK 2.0.0により提供されるClusterとBucketに依存しています。Buketを適切に設定するために、CouchbaseConfiguratoinは、本プロダクトで使用されなければなりません(後述のように、CouchabseConfiguration.builder().build()は適正なデフォルト値を提供します)。
+本プロダクトでは、Java SDK 2.0.0により提供されるClusterとBucketに依存しています。Buketを適切に設定するために、CouchbaseConfiguratoinを本プロダクトで使用されなければなりません(後述のように、CouchabseConfiguration.builder().build()は適正なデフォルト値を提供します)。
 
-Each CouchbaseCacheManager has an underlying CouchbaseCluster instance. These are bootstrapped using a list of connection strings that default to localhost but can be changed by calling setBootstrap on the caching provider prior to creating the cache manager.
 各CouchbaseCacheManagerは、CouchaseClusterインスタンスを保持しています。これらは、コネクション・ストリングのリストを使用してブートストラップされます。コネクション・ストリングのデフォルトは、localhostですが、キャッシングプロバイダのsetBootstrapを呼び出して(キャッシュマネージャを生成するよりも)設定を変更することができます。
 
-The CouchbaseCacheManager can then be used to create and obtain a new CouchbaseCache, which is backed by a Bucket from the SDK.
-CouchbaseCacheManagerは、そして、新しいCouchbaseCacheを生成・取得して使用されます。これは、SDKからのBucketによりバックされます。
+CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketにより返されます)を生成・取得して使用されます。
 
-Let's see a short complete example. This example requires the following couchbase context:
-では、短いながら、完全な例を紹介します。この例は、以下のcouchbaseコンテキスト要件を満たす必要があります:
-
-A cluster reachable on localhost:8091
-A bucket named "jcache" (password: "jcache") in this cluster
-Once that is the case, the following snippet can be run:
+では、短いながら、完全な例を紹介します。この例は、以下の要件を満たす必要があります:
 クラスタのアドレスはlocalhost:8091とする
 バケット名は"jcache"(password:"jcache")とする
-
 本ケースでは、以下のスニペットが実行できます:
-
 
 `CouchbaseCachingProvider cachingProvider = new CouchbaseCachingProvider();`
 
