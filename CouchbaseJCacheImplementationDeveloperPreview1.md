@@ -131,11 +131,11 @@ JCache APIの一部は、キャッシュ内の全てのアイテムを取得し�
 私は、本プロダクトに興味を持っていただくこと希望します。もしも、JCache及びJava SDK(おそらく後でここに戻ることになるでしょう)についてもっと理解したい場合は以下のリソースを参照ください。:
 
 * The JCache Specification(
-* https://github.com/jsr107/jsr107spec
-* )
+https://github.com/jsr107/jsr107spec
+)
 * The SDK 2.0 Documentation(
-* http://docs.couchbase.com/developer/java-2.0/java-intro.html
-* )
+http://docs.couchbase.com/developer/java-2.0/java-intro.html
+)
 
 もしも、提案及びフィードバックがありましたら、是非お知らせください！コメントをされる場合の最も適切な場所としてオフィシャル・フォーラム(
 https://forums.couchbase.com/c/java-sdk
