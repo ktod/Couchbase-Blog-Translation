@@ -41,9 +41,13 @@ Maven Centralにて公開する予定ですが、現時点では、Couchbase社�
     </repositories>`
 
 
-その他の選択肢としては、直接jarファイル(http://files.couchbase.com/maven2/com/couchbase/client/java-cache/1.0.0-dp/)を取得することができます。(java-cache, java-client, java-coreライブラリも取得する必要があります。)
+その他の選択肢としては、直接jarファイル(
+http://files.couchbase.com/maven2/com/couchbase/client/java-cache/1.0.0-dp/
+)を取得することができます。(java-cache, java-client, java-coreライブラリも取得する必要があります。)
 
-さらに関心をお持ちの方ならば、githubから直接最新のコード(https://github.com/couchbaselabs/couchbase-java-cache)を取得してビルドすることもできます。
+さらに関心をお持ちの方ならば、githubから直接最新のコード(
+https://github.com/couchbaselabs/couchbase-java-cache
+)を取得してビルドすることもできます。
 
 ##概要
 
@@ -126,14 +130,24 @@ JCache APIの一部は、キャッシュ内の全てのアイテムを取得し�
 
 私は、本プロダクトに興味を持っていただくこと希望します。もしも、JCache及びJava SDK(おそらく後でここに戻ることになるでしょう)についてもっと理解したい場合は以下のリソースを参照ください。:
 
-* The JCache Specification(https://github.com/jsr107/jsr107spec)
-* The SDK 2.0 Documentation(http://docs.couchbase.com/developer/java-2.0/java-intro.html)
+* The JCache Specification(
+* https://github.com/jsr107/jsr107spec
+* )
+* The SDK 2.0 Documentation(
+* http://docs.couchbase.com/developer/java-2.0/java-intro.html
+* )
 
-もしも、提案及びフィードバックがありましたら、是非お知らせください！コメントをされる場合の最も適切な場所としてオフィシャル・フォーラム(https://forums.couchbase.com/c/java-sdk)があります。
+もしも、提案及びフィードバックがありましたら、是非お知らせください！コメントをされる場合の最も適切な場所としてオフィシャル・フォーラム(
+https://forums.couchbase.com/c/java-sdk
+)があります。
 
-その他にもIssueやバグ・トラッカー(https://issues.couchbase.com/browse/JCBC/component/11910)に保存することもできます("Couchbase Java Client"プロジェクトや、aka JCBC、JCacheを使用してください)
+その他にもIssueやバグ・トラッカー(
+https://issues.couchbase.com/browse/JCBC/component/11910
+)に保存することもできます("Couchbase Java Client"プロジェクトや、aka JCBC、JCacheを使用してください)
 
-コントリビューションもまたウェルカムです！我々のCLAの認証(open-source (http://www.couchbase.com/open-source)ドキュメント)が必要で、GitHubのpull-requestをサブミットする前にバリデートを行ってください。
+コントリビューションもまたウェルカムです！我々のCLAの認証(open-source (
+http://www.couchbase.com/open-source
+)ドキュメント)が必要で、GitHubのpull-requestをサブミットする前にバリデートを行ってください。
 
 このプレビューでエンジョイしていただけることを希望します。
 
