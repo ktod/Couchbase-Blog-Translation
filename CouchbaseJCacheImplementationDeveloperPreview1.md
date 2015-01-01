@@ -72,7 +72,9 @@ CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketに�
 では、短いながら、完全な例を紹介します。この例は、以下の要件を満たす必要があります:
 * クラスタのアドレスはlocalhost:8091とする
 * バケット名は"jcache"(password:"jcache")とする
-本ケースでは、以下のスニペットが実行できます:
+
+コードサンプル:
+
 
 `CouchbaseCachingProvider cachingProvider = new CouchbaseCachingProvider();`
 
