@@ -61,10 +61,14 @@ pom.xmlに以下の依存関係を追記します:
 ##概要
 
 In JCache, a CachingProvider is resolved and used to obtain a CacheManager, in turn used to create Caches. Each cache can be configured using a CacheConfiguration.
+JCacheでは、CachingProviderは、キャッシュの生成時に、CacheManagerを取得するために使用されます。
+各キャッシュは、CacheConfigurationを使用して設定されます。
 
 This implementation relies on the Cluster and Bucket introduced in the Java SDK 2.0.0. In order to correctly configure the underlying bucket, a CouchbaseConfiguration must be used in this implementation (but note that CouchbaseConfiguration.builder().build() should provide sane defaults, see below).
+本プロダクトでは、Java SDK 2.0.0 により提供されるClusterとBucketに依存しています。Buketを適切に設定するために、CouchbaseConfiguratoinは、本プロダクトで使用されなければなりません(後述のように、CouchabseConfiguration.builder().build()は適正なデフォルト値を提供します)。
 
 Each CouchbaseCacheManager has an underlying CouchbaseCluster instance. These are bootstrapped using a list of connection strings that default to localhost but can be changed by calling setBootstrap on the caching provider prior to creating the cache manager.
+各CouchbaseCacheManagerは、CouchaseClusterインスタンスを保持しています。これらはブートストラップされます。
 
 The CouchbaseCacheManager can then be used to create and obtain a new CouchbaseCache, which is backed by a Bucket from the SDK.
 
