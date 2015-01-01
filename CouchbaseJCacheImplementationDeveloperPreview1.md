@@ -121,17 +121,14 @@ CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketに�
 
 ##JCache APIによる一般的な設定について
 
-One can change these settings either by mutating the configuration once it is built, or passing a CompleteConfiguration to be copied to the builder's useBase(CompleteConfiguration base) method.
-CouchbaseConfigurationは、デフォルトのMutableConfiguration(これはAPIから通常の設定を行います)をベースにしています。
-設定変更のためには、一度ビルドした設定を変更するか、ビルダーのuseBaseメソッド(CompleteConfigurationをベースにしています)をコピーするためにCompleteConfigurationをパッシングすることによりこれを行うことができます。
+CouchbaseConfigurationは、MutableConfiguration(これはAPIから通常の設定を行います)をベースにしています。
+設定変更のためには、一度ビルドした設定を変更するか、ビルダーのuseBaseメソッド(CompleteConfigurationをベースにしています)をコピーするためにCompleteConfigurationを送信することによりこれを行うことができます。
 
 
 ##Bucketの使用について
 
-You have two options: either share a single bucket for multiple caches, prefixing the keys of each cache in the shared bucket, or use a dedicated bucket for a given cache.
-2つのオプションが選択できます: 複数のキャッシュのために唯一のbucketを共有し、この共有Bucketに各キャッシュに応じてプレフィックスしたkeyにより使用するか、もしくは、各キャッシュごとに専用のbucketを使用することになります。
+2つのオプションが選択できます: 複数のキャッシュのために唯一のbucketを共有し、この共有Bucketに各キャッシュに応じて各keyにプレフィックスを付与することにより使用する方法か、もしくは、各キャッシュごとに専用のbucketを使用する方法です。
 
-By default, a shared bucket named jcache is used (expected password: "jcache"). The default prefix is the name of the cache followed by an underscore.
 デフォルトでは、"jcached"という名称の共有Buket(パスワードは"jcache"と想定する)を使用します。(Keyに付与される)デフォルトのプレフィックスは、キャッシュ名+アンダースコア("_")となります。
 
 * Shared cache can be changed via useSharedBucket(String name, String password).
