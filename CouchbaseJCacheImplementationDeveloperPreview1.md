@@ -35,6 +35,7 @@ pom.xmlに以下の依存関係を追記します:
 `</dependencies>`
 
 
+
 `<repositories>`
 
 `    <repository>`
@@ -52,7 +53,11 @@ pom.xmlに以下の依存関係を追記します:
 `</repositories>`
 
 
-Alternatively, you can grab the jars directly (you'll need java-cache, java-client and java-core), of if you feel adventurous you can see the latest code on github.
+その他の選択肢としては、直接jarファイルを取得することができます。(http://files.couchbase.com/maven2/com/couchbase/client/java-cache/1.0.0-dp/)
+(java-cache, java-client, java-coreライブラリも取得する必要があります。)
+さらに関心をお持ちの方ならば、githubから直接最新のコードを取得してビルドすることもできます。
+(https://github.com/couchbaselabs/couchbase-java-cache)
+
 
 A Short Overview
 
