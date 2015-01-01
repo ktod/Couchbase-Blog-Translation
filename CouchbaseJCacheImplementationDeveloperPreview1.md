@@ -13,10 +13,9 @@ JCache specificaton は、開発者がアプリケーションの開発に際し
 これは、本実装が、完全に終了したということを意味することではなく、いくつかの事項についてはなお作業の途上にありますが、基本的なオペレーションや設定は機能している状態であることにご留意ください。
 
 
-Let's discover how to use this implementation!
+本プロダクトの新しい用途を是非発見してください！
 
-Obtaining The Implementation
-
+##利用方法
 The plan is of course to make it available on Maven Central, but for now the Couchbase JCache implementation is hosted on our own Maven repository. You can grab the developer preview from there by adding the following to your pom.xml:
 
 <dependencies>
