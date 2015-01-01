@@ -68,15 +68,21 @@ This implementation relies on the Cluster and Bucket introduced in the Java SDK 
 本プロダクトでは、Java SDK 2.0.0 により提供されるClusterとBucketに依存しています。Buketを適切に設定するために、CouchbaseConfiguratoinは、本プロダクトで使用されなければなりません(後述のように、CouchabseConfiguration.builder().build()は適正なデフォルト値を提供します)。
 
 Each CouchbaseCacheManager has an underlying CouchbaseCluster instance. These are bootstrapped using a list of connection strings that default to localhost but can be changed by calling setBootstrap on the caching provider prior to creating the cache manager.
-各CouchbaseCacheManagerは、CouchaseClusterインスタンスを保持しています。これらはブートストラップされます。
+各CouchbaseCacheManagerは、CouchaseClusterインスタンスを保持しています。これらは、コネクション・ストリングのリストを使用してブートストラップされます。コネクション・ストリングのデフォルトは、localhostですが、キャッシングプロバイダのsetBootstrapを呼び出して(キャッシュマネージャを生成するよりも)設定を変更することができます。
 
 The CouchbaseCacheManager can then be used to create and obtain a new CouchbaseCache, which is backed by a Bucket from the SDK.
+CouchbaseCacheManagerは、そして、新しいCouchbaseCacheを生成・取得して使用されます。これは、SDKからのBucketによりバックされます。
 
 Let's see a short complete example. This example requires the following couchbase context:
+では、短いながら、完全な例を紹介します。この例は、以下のcouchbaseコンテキスト要件を満たす必要があります:
 
 A cluster reachable on localhost:8091
 A bucket named "jcache" (password: "jcache") in this cluster
 Once that is the case, the following snippet can be run:
+クラスタのアドレスはlocalhost:8091とする
+バケット名は"jcache"(password:"jcache")とする
+
+本ケースでは、以下のスニペットが実行できます:
 
 CouchbaseCachingProvider cachingProvider = new CouchbaseCachingProvider();
 //if your cluster has no localhost node, customize the bootstrap list
