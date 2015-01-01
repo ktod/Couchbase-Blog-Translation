@@ -60,22 +60,22 @@ CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketに�
 コードサンプル:
 
     CouchbaseCachingProvider cachingProvider = new CouchbaseCachingProvider();
-    //if your cluster has no localhost node, customize the bootstrap list
-    //cachingProvider.setBootstrap("192.168.1.2", "node3.mydomain.org");
-    //if you already use the Java SDK somewhere else in your application, you should reuse Environment
+    //ノードがlocalhostで動作していない場合、cachingProviderをbootstrap listを指定してカスタマイズする
+    //setBootstrap("192.168.1.2", "node3.mydomain.org");
+    //すでにアプリケーションの何処かでJava SDKを使用しているならば環境を再利用する
     //cachingProvider.setEnvironment(myCouchbaseEnvironmentUsedSomewhereElse);
     
-    //create a cache manager identified by the default URI and ClassLoader
+    //キャッシュマネージャを生成する(デフォルトのURLとClassLoader）
     CouchbaseCacheManager cacheManager = cachingProvider.getCacheManager();
     
-    //create a cache named myFirstCache
+    //キャッシュを生成(キャッシュ名 myFirstCache)
     CouchbaseCache<String, String> cache = cacheManager.createCache("myFirstCache",
     CouchbaseConfiguration.builder("myFirstCache").build());
     
-    //cache a String
+    //文字列をキャッシュ
     cache.put("myKey", "myValue");
     
-    //get it back from the cache
+    //キャッシュから値を取得
     String inCache = cache.get("myKey");
 
 
