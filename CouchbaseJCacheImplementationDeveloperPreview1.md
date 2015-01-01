@@ -33,14 +33,22 @@ pom.xmlに以下の依存関係を追記します:
 `    </dependency>`
 
 `</dependencies>`
-``
+
+
 `<repositories>`
+
 `    <repository>`
+
 `        <id>couchbase</id>`
+
 `        <name>couchbase repo</name>`
+
 `        <url>http://files.couchbase.com/maven2</url>`
+
 `        <snapshots><enabled>false</enabled></snapshots>`
+
 `    </repository>`
+
 `</repositories>`
 
 
