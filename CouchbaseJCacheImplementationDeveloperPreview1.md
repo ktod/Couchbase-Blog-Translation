@@ -16,7 +16,8 @@ JCache specificaton は、開発者がアプリケーションの開発に際し
 本プロダクトの新しい用途を是非発見してください！
 
 ##利用方法
-The plan is of course to make it available on Maven Central, but for now the Couchbase JCache implementation is hosted on our own Maven repository. You can grab the developer preview from there by adding the following to your pom.xml:
+Maven Centralにて公開する予定ですが、現時点では、Couchbase JCache implemaentationは、Couchbase社のMavenレポジトリより利用することができます。
+pom.xmlに以下の依存関係を追記します:
 
 <dependencies>
     <dependency>
