@@ -126,19 +126,19 @@ Once that is the case, the following snippet can be run:
 Note that cache managers are identified by an URI and a ClassLoader, and are only created if no previous CacheManager was registered for the same identifiers (otherwise the method returns the existing manager).
 キャッシュマネージャは、URIとClassLoaderにより特定され、そして前述のCacheManagerは同じ識別子のために登録される(さもなければ、このメソッドは現存するマネージャを返却します)ことを留意してください。
 
-##Customizing The Way Caching Is Done キャッシング方法のカスタマイズ
+##キャッシング方法のカスタマイズ
 
 We saw that by default, the caching implementation tries to connect to a cluster reachable on localhost, and that we can use CouchbaseConfiguration.builder("cacheName").build() as a default for the configuration of a cache. But was can we customize through CouchbaseConfiguration?
 デフォルトにみられるように、キャッシングの実装は、ローカルホストの到達可能なクラスタに接続を試みます。そして、キャッシュの設定のために、デフォルトとしてCouchbaseConfiguration.builder("cacheName").build()が使用されます。しかし、CouchbaseConfigurationを通じて設定をカスタマイズできるでしょうか？
 
-##JCache APIに関する一般の設定について
+##JCache APIによる一般的な設定について
 
 The CouchbaseConfiguration is based on a default MutableConfiguration (which defines common settings from the API). One can change these settings either by mutating the configuration once it is built, or passing a CompleteConfiguration to be copied to the builder's useBase(CompleteConfiguration base) method.
 CouchbaseConfigurationは、デフォルトのMutableConfiguration(これは、APIから通常の設定行います)を基本にしています。
 ビルダーのuseBaseメソッド(CompleteConfigurationをベースにした)をコピーされるためのCompleteConfigurationをパッシングもしくは、一度ビルドした設定を変更することにより、設定を変更することができます。
 
 
-##どのBucketを使用するか
+##Bucketの使用について
 
 You have two options: either share a single bucket for multiple caches, prefixing the keys of each cache in the shared bucket, or use a dedicated bucket for a given cache.
 2つのオプションが選択できます: 複数のキャッシュのために唯一のbucketを共有し、この共有Bucketに各キャッシュに応じてプレフィックスしたkeyにより使用するか、もしくは、各キャッシュごとに専用のbucketを使用することになります。
