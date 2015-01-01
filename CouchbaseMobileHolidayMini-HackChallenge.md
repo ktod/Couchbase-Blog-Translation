@@ -8,8 +8,9 @@ December 23, 2014
 原著者
 Wayne Carter
 
-
-Have some downtime during the holidays? Then you should join the Couchbase Mobile Holiday Mini-Hack Challenge and build an online/offline app in 30 minutes. That’s right – 30 minutes!
+ホリデー中に、ちょっとした息抜きはいかがですか？
+Couchbase Mobile Holiday Mini-Hack Challengeに参加して30分程でオンライン・オフラインで動作するアプリケーションを作ってみませんか？
+そのとおり - たったの30分です!
 
 We created the mini hack to give mobile developers a fast, easy, and fun way to explore development with Couchbase Mobile. It consists of a small challenge involving a basic set of Couchbase Mobile APIs for building a mobile app that works both online and offline. And it can be done in 30 minutes.
 
