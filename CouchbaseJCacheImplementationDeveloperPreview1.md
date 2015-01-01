@@ -112,6 +112,7 @@ CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketに�
 
 `String inCache = cache.get("myKey");`
 
+
 このキャッシュマネージャは、URIとClassLoaderにより特定され、そしてこれまでに同じ識別子のために登録されたCacheManagerが無い場合にのみ生成されることに留意してください。(さもなければ、このメソッドは現存するマネージャを返却します)
 
 ##キャッシング方法のカスタマイズ
