@@ -115,7 +115,7 @@ CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketに�
 
 
 Note that cache managers are identified by an URI and a ClassLoader, and are only created if no previous CacheManager was registered for the same identifiers (otherwise the method returns the existing manager).
-キャッシュマネージャは、URIとClassLoaderにより特定され、そして前述のCacheManagerは同じ識別子のために登録される(さもなければ、このメソッドは現存するマネージャを返却します)ことを留意してください。
+キャッシュマネージャは、URIとClassLoaderにより特定され、そして前述のCacheManagerは同じ識別子のために登録されることに留意してください。(さもなければ、このメソッドは現存するマネージャを返却します)
 
 ##キャッシング方法のカスタマイズ
 
