@@ -21,21 +21,21 @@ pom.xmlに以下の依存関係を追記します:
 
 
 `<dependencies>`
-    <dependency>
-        <groupId>com.couchbase.client</groupId>
-        <artifactId>java-cache</artifactId>
-        <version>1.0.0-dp</version>
-    </dependency>
-</dependencies>
-
-<repositories>
-    <repository>
-        <id>couchbase</id>
-        <name>couchbase repo</name>
-        <url>http://files.couchbase.com/maven2</url>
-        <snapshots><enabled>false</enabled></snapshots>
-    </repository>
-</repositories>`
+`    <dependency>`
+`        <groupId>com.couchbase.client</groupId>`
+`        <artifactId>java-cache</artifactId>`
+`        <version>1.0.0-dp</version>`
+`    </dependency>`
+`</dependencies>`
+``
+`<repositories>`
+`    <repository>`
+`        <id>couchbase</id>`
+`        <name>couchbase repo</name>`
+`        <url>http://files.couchbase.com/maven2</url>`
+`        <snapshots><enabled>false</enabled></snapshots>`
+`    </repository>`
+`</repositories>`
 
 
 Alternatively, you can grab the jars directly (you'll need java-cache, java-client and java-core), of if you feel adventurous you can see the latest code on github.
