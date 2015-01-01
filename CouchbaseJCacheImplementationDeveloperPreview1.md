@@ -139,44 +139,32 @@ CouchbaseConfigurationは、MutableConfiguration(これはAPIから通常の設�
 
 JCache APIの一部は、キャッシュ内の全てのアイテムを取得したり、イテレータとして取得することができます。この機能をCouchbaseで実現する最適な方法は、Viewを使用することです。このため本プロダクトでは、Viewにより、キャッシュ内の全てのアイテムのリストが取得できることを想定しています。
 
-* By default, the expected design document and view are jcache and the cacheName.
-デフォルトでは、想定するデザインドキュメント名は"jcache"で、View名はcacheNameです。
-* The design document can be changed by calling viewAllDesignDoc(String designDocName).
-このデザインドキュメントは、viewAllDesignDoc(String designDocName)により変更可能です。
-* The view name can be changed by calling viewAllViewName(String viewName).
-View名は、viewAllViewName(String viewName)により変更可能です。
-* Alternatively use viewAll(String designDocName, String viewName) to change both.
-その他の設定変更方法としてはviewAll(String designDocName, String viewName)により双方を変更することができます。
+* デフォルトでは、デザインドキュメント名は"jcache"で、View名はcacheNameです。
+* このデザインドキュメントは、viewAllDesignDoc(String designDocName)により変更可能です。
+* View名は、viewAllViewName(String viewName)により変更可能です。
+* その他の設定変更方法としてはviewAll(String designDocName, String viewName)により双方を変更することができます。
 
-The user is expected to create the correct view in the correct bucket for each cache. Don't forget that keys are probably prefixed in the bucket (unless you explicitely used a dedicated bucket).
-ユーザは、各キャッシュに対して、適切なViewを適切なBucketに対して生成されていることを想定しています。KeyはBucket内でプレフィックスされちることを忘れないでください。(専用のBucketを明確に使用することなく)
+ユーザは、各キャッシュに対して、適切なViewと適切なBucketに対して生成されていることを想定しています。KeyはBucket内でプレフィックスされるであろうということを忘れないでください。(特定のBucketを明確に使用することなく)
 
 ##今後について
 
-This developer preview showcases the general direction we went with this implementation, and has most JCache operations working in a minimal capacity (there's no proper locking yet, so operations described as atomic in the spec, like getAndPut, should not be considered as such).
 本デベロッパー・プレビューは、我々が本プロダクトで行おうとしている全般的な方向性を示しています。そして、ほとんどのJCacheオペレーションは、最小限の容量で動作し(まだロック機構は実現いません、このため、オペレーションは、スペック中、アトミックとして描写されています。例えばgetAndPutがそうですが、本来の動作として認識するべきではありません。)
 
-The remaining things to implement in order to have a full specification coverage are: - improving and completing statistics gathering - locking, atomicity of a sub-set of operations - adding support for listeners - adding support for EntryProcessors - implementing read-through and write-through - adding annotation support
 残余の事項としては、仕様の全てをカバーするように実装をすすめる必要があります: - 統計収集機能の完全な実装と改善 - ロック機構, オペレーションのサブセットとしての原子性 - リスナーのためのサポートの追加 - EntryProcessorsのサポート - リード・スルー、ライト・スルーの実装 - アノテーション・サポートの追加
 
 
 ##最後に
 
-I hope this will be of interest to you. If you want to learn more about JCache or the Java SDK (and maybe come back here later), here are some resources:
-私は、本プロダクトに興味を抱いていただくこと希望します。もしも、JCache及びJava SDK(おそらく後でここに戻ることになるでしょう)についてもっと理解したい場合は以下のリソースを参照ください。
+私は、本プロダクトに興味を持っていただくこと希望します。もしも、JCache及びJava SDK(おそらく後でここに戻ることになるでしょう)についてもっと理解したい場合は以下のリソースを参照ください。:
 
 * The JCache Specification(https://github.com/jsr107/jsr107spec)
 * The SDK 2.0 Documentation(http://docs.couchbase.com/developer/java-2.0/java-intro.html)
 
-If you have some suggestions or feedback to give, please do! The best place to do so is in the comments below or in the official forums.
 もしも、提案及びフィードバックがありましたら、是非お知らせください！コメントをされる場合の最も適切な場所としてオフィシャル・フォーラム(https://forums.couchbase.com/c/java-sdk)があります。
 
-You can also file Issues in our bug tracker (use the "Couchbase Java Client" project, aka JCBC, and use JCache component).
 その他にもIssueやバグ・トラッカー(https://issues.couchbase.com/browse/JCBC/component/11910)に保存することもできます("Couchbase Java Client"プロジェクトや、aka JCBC、JCacheを使用してください)
 
-Contributions are also welcome! You would have to sign our CLA (see open-source doc) and let us validate that you did before submitting a pull-request on GitHub.
 コントリビューションもまたウェルカムです！我々のCLAの認証(open-source (http://www.couchbase.com/open-source)ドキュメント)が必要で、GitHubのpull-requestをサブミットする前にバリデートを行ってください。
 
-I hope you enjoyed this preview. Happy coding!
 このプレビューでエンジョイしていただけることを希望します。ハッピー・コーディング！
 
