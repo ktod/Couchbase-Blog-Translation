@@ -158,14 +158,15 @@ By default, a shared bucket named jcache is used (expected password: "jcache"). 
 Part of the JCache API allows to get all items in a cache, or iterate over them. The best way to achieve that in Couchbase is to use views. So this implementations expects a view to be available to list all items in a cache.
 JCache APIの一部は、キャッシュ内の全てのアイテムを取得したり、イテレータとして取得することができます。この機能をCouchbaseで実現するベストな方法は、Viewを使用することです。このため、本プロダクトでは、Viewにより、キャッシュ内の全てのアイテムのリストが取得できることを想定しています。
 
-By default, the expected design document and view are jcache and the cacheName.
+* By default, the expected design document and view are jcache and the cacheName.
 デフォルトでは、想定するデザインドキュメント名は"jcache"で、View名はcacheNameです。
-The design document can be changed by calling viewAllDesignDoc(String designDocName).
+* The design document can be changed by calling viewAllDesignDoc(String designDocName).
 このデザインドキュメントは、viewAllDesignDoc(String designDocName)により変更可能です。
-The view name can be changed by calling viewAllViewName(String viewName).
+* The view name can be changed by calling viewAllViewName(String viewName).
 View名は、viewAllViewName(String viewName)により変更可能です。
-Alternatively use viewAll(String designDocName, String viewName) to change both.
+* Alternatively use viewAll(String designDocName, String viewName) to change both.
 その他の設定変更方法としてはviewAll(String designDocName, String viewName)により双方を変更することができます。
+
 The user is expected to create the correct view in the correct bucket for each cache. Don't forget that keys are probably prefixed in the bucket (unless you explicitely used a dedicated bucket).
 ユーザは、各キャッシュに対して、適切なViewを適切なBucketに対して生成されていることを想定しています。KeyはBucket内でプレフィックスされちることを忘れないでください。(専用のBucketを明確に使用することなく)
 
