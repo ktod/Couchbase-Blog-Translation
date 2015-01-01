@@ -126,15 +126,15 @@ Once that is the case, the following snippet can be run:
 Note that cache managers are identified by an URI and a ClassLoader, and are only created if no previous CacheManager was registered for the same identifiers (otherwise the method returns the existing manager).
 キャッシュマネージャは、URIとClassLoaderにより特定され、そして前述のCacheManagerは同じ識別子のために登録される(さもなければ、このメソッドは現存するマネージャを返却します)ことを留意してください。
 
-Customizing The Way Caching Is Done
+##Customizing The Way Caching Is Done
 
 We saw that by default, the caching implementation tries to connect to a cluster reachable on localhost, and that we can use CouchbaseConfiguration.builder("cacheName").build() as a default for the configuration of a cache. But was can we customize through CouchbaseConfiguration?
 
-Common Settings in the JCache API
+##Common Settings in the JCache API
 
 The CouchbaseConfiguration is based on a default MutableConfiguration (which defines common settings from the API). One can change these settings either by mutating the configuration once it is built, or passing a CompleteConfiguration to be copied to the builder's useBase(CompleteConfiguration base) method.
 
-What Bucket To Use?
+##What Bucket To Use?
 
 You have two options: either share a single bucket for multiple caches, prefixing the keys of each cache in the shared bucket, or use a dedicated bucket for a given cache.
 
@@ -153,13 +153,13 @@ The view name can be changed by calling viewAllViewName(String viewName).
 Alternatively use viewAll(String designDocName, String viewName) to change both.
 The user is expected to create the correct view in the correct bucket for each cache. Don't forget that keys are probably prefixed in the bucket (unless you explicitely used a dedicated bucket).
 
-What's Next?
+##What's Next?
 
 This developer preview showcases the general direction we went with this implementation, and has most JCache operations working in a minimal capacity (there's no proper locking yet, so operations described as atomic in the spec, like getAndPut, should not be considered as such).
 
 The remaining things to implement in order to have a full specification coverage are: - improving and completing statistics gathering - locking, atomicity of a sub-set of operations - adding support for listeners - adding support for EntryProcessors - implementing read-through and write-through - adding annotation support
 
-Conclusion
+##Conclusion
 
 I hope this will be of interest to you. If you want to learn more about JCache or the Java SDK (and maybe come back here later), here are some resources:
 
