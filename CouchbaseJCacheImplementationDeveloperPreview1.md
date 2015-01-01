@@ -131,11 +131,12 @@ Note that cache managers are identified by an URI and a ClassLoader, and are onl
 We saw that by default, the caching implementation tries to connect to a cluster reachable on localhost, and that we can use CouchbaseConfiguration.builder("cacheName").build() as a default for the configuration of a cache. But was can we customize through CouchbaseConfiguration?
 デフォルトにみられるように、キャッシングの実装は、ローカルホストの到達可能なクラスタに接続を試みます。そして、キャッシュの設定のために、デフォルトとしてCouchbaseConfiguration.builder("cacheName").build()が使用されます。しかし、CouchbaseConfigurationを通じて設定をカスタマイズできるでしょうか？
 
-##Common Settings in the JCache API
+##JCache APIに関する一般の設定について
 
 The CouchbaseConfiguration is based on a default MutableConfiguration (which defines common settings from the API). One can change these settings either by mutating the configuration once it is built, or passing a CompleteConfiguration to be copied to the builder's useBase(CompleteConfiguration base) method.
+CouchbaseConfigurationは、デフォルトのMutableConfigurationを基本にしています()
 
-##What Bucket To Use?
+##どのBucketを使用するか
 
 You have two options: either share a single bucket for multiple caches, prefixing the keys of each cache in the shared bucket, or use a dedicated bucket for a given cache.
 
@@ -154,7 +155,7 @@ The view name can be changed by calling viewAllViewName(String viewName).
 Alternatively use viewAll(String designDocName, String viewName) to change both.
 The user is expected to create the correct view in the correct bucket for each cache. Don't forget that keys are probably prefixed in the bucket (unless you explicitely used a dedicated bucket).
 
-##What's Next?
+##今後について
 
 This developer preview showcases the general direction we went with this implementation, and has most JCache operations working in a minimal capacity (there's no proper locking yet, so operations described as atomic in the spec, like getAndPut, should not be considered as such).
 
