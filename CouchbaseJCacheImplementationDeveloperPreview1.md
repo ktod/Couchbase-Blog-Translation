@@ -117,14 +117,13 @@ CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketに�
 
 ##キャッシング方法のカスタマイズ
 
-We saw that by default, the caching implementation tries to connect to a cluster reachable on localhost, and that we can use CouchbaseConfiguration.builder("cacheName").build() as a default for the configuration of a cache. But was can we customize through CouchbaseConfiguration?
-デフォルトにみられるように、キャッシングの実装は、ローカルホストの到達可能なクラスタに接続を試みます。そして、キャッシュの設定のために、デフォルトとしてCouchbaseConfiguration.builder("cacheName").build()が使用されます。しかし、CouchbaseConfigurationを通じて設定をカスタマイズできるでしょうか？
+デフォルトでは、キャッシング機構はローカルホストの到達可能なクラスタに接続を試みるように実装されています。そして、キャッシュの設定として、デフォルトでCouchbaseConfiguration.builder("cacheName").build()が使用することができます。しかし、CouchbaseConfigurationを通じて設定をカスタマイズことはできるでしょうか？
 
 ##JCache APIによる一般的な設定について
 
-The CouchbaseConfiguration is based on a default MutableConfiguration (which defines common settings from the API). One can change these settings either by mutating the configuration once it is built, or passing a CompleteConfiguration to be copied to the builder's useBase(CompleteConfiguration base) method.
-CouchbaseConfigurationは、デフォルトのMutableConfiguration(これは、APIから通常の設定行います)を基本にしています。
-ビルダーのuseBaseメソッド(CompleteConfigurationをベースにした)をコピーされるためのCompleteConfigurationをパッシングもしくは、一度ビルドした設定を変更することにより、設定を変更することができます。
+One can change these settings either by mutating the configuration once it is built, or passing a CompleteConfiguration to be copied to the builder's useBase(CompleteConfiguration base) method.
+CouchbaseConfigurationは、デフォルトのMutableConfiguration(これはAPIから通常の設定を行います)をベースにしています。
+設定変更のためには、一度ビルドした設定を変更するか、ビルダーのuseBaseメソッド(CompleteConfigurationをベースにしています)をコピーするためにCompleteConfigurationをパッシングすることによりこれを行うことができます。
 
 
 ##Bucketの使用について
