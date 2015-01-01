@@ -144,12 +144,16 @@ You have two options: either share a single bucket for multiple caches, prefixin
 2つのオプションが選択できます: 複数のキャッシュのために唯一のbucketを共有し、この共有Bucketに各キャッシュに応じてプレフィックスしたkeyにより使用するか、もしくは、各キャッシュごとに専用のbucketを使用することになります。
 
 By default, a shared bucket named jcache is used (expected password: "jcache"). The default prefix is the name of the cache followed by an underscore.
-デフォルトでは、"jcached"という名称の共有Buket(パスワードは"jcache"と想定する)を使用します。
+デフォルトでは、"jcached"という名称の共有Buket(パスワードは"jcache"と想定する)を使用します。(Keyに付与される)デフォルトのプレフィックスは、キャッシュ名+アンダースコア("_")となります。
 
-Shared cache can be changed via useSharedBucket(String name, String password).
-Key prefix in a shared cache context can be changed by using withPrefix(String prefix).
-Alternative method of using dedicated cache can be activated by using useDedicatedBucket(String name, String password) (it will reset the prefix).
-Relying On Views To List All Items In A Cache
+* Shared cache can be changed via useSharedBucket(String name, String password).
+共有キャッシュは、useSharedBucket(String name, String password)を通じて設定を変更することができます。
+* Key prefix in a shared cache context can be changed by using withPrefix(String prefix).
+共有キャッシュ中のKeyのプレフィックスもまた、withPrefix(String prefix)を使用することで変更することができます。
+* Alternative method of using dedicated cache can be activated by using useDedicatedBucket(String name, String password) (it will reset the prefix).
+専用のキャッシュを使用する方法では、useDedicatedBucket(String name, String password)を使用することでアクティベートすることができます。(この呼び出しにより、プレフィックスはリセットされます)
+
+##Relying On Views To List All Items In A Cache
 
 Part of the JCache API allows to get all items in a cache, or iterate over them. The best way to achieve that in Couchbase is to use views. So this implementations expects a view to be available to list all items in a cache.
 
