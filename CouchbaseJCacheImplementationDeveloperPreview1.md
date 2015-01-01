@@ -21,11 +21,17 @@ pom.xmlに以下の依存関係を追記します:
 
 
 `<dependencies>`
+
 `    <dependency>`
+
 `        <groupId>com.couchbase.client</groupId>`
+
 `        <artifactId>java-cache</artifactId>`
+
 `        <version>1.0.0-dp</version>`
+
 `    </dependency>`
+
 `</dependencies>`
 ``
 `<repositories>`
