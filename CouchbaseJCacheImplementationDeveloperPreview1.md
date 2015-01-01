@@ -70,8 +70,8 @@ JCacheでは、CachingProviderは、キャッシュの生成時にCacheManager�
 CouchbaseCacheManagerは新しいCouchbaseCache(これはSDKからのBucketにより返されます)を生成・取得して使用されます。
 
 では、短いながら、完全な例を紹介します。この例は、以下の要件を満たす必要があります:
-クラスタのアドレスはlocalhost:8091とする
-バケット名は"jcache"(password:"jcache")とする
+* クラスタのアドレスはlocalhost:8091とする
+* バケット名は"jcache"(password:"jcache")とする
 本ケースでは、以下のスニペットが実行できます:
 
 `CouchbaseCachingProvider cachingProvider = new CouchbaseCachingProvider();`
