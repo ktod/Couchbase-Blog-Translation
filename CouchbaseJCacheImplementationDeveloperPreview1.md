@@ -34,7 +34,8 @@ pom.xmlに以下の依存関係を追記します:
 
 `</dependencies>`
 
-
+ 
+ 
 
 `<repositories>`
 
@@ -53,13 +54,11 @@ pom.xmlに以下の依存関係を追記します:
 `</repositories>`
 
 
-その他の選択肢としては、直接jarファイルを取得することができます。(http://files.couchbase.com/maven2/com/couchbase/client/java-cache/1.0.0-dp/)
-(java-cache, java-client, java-coreライブラリも取得する必要があります。)
-さらに関心をお持ちの方ならば、githubから直接最新のコードを取得してビルドすることもできます。
-(https://github.com/couchbaselabs/couchbase-java-cache)
+その他の選択肢としては、直接jarファイル(http://files.couchbase.com/maven2/com/couchbase/client/java-cache/1.0.0-dp/)を取得することができます。(java-cache, java-client, java-coreライブラリも取得する必要があります。)
 
+さらに関心をお持ちの方ならば、githubから直接最新のコード(https://github.com/couchbaselabs/couchbase-java-cache)を取得してビルドすることもできます。
 
-A Short Overview
+##A Short Overview
 
 In JCache, a CachingProvider is resolved and used to obtain a CacheManager, in turn used to create Caches. Each cache can be configured using a CacheConfiguration.
 
