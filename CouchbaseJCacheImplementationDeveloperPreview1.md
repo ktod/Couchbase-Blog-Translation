@@ -13,14 +13,14 @@ JCache specificaton は、開発者がアプリケーションの開発に際し
 これは、本実装が、完全に終了したということを意味することではなく、いくつかの事項についてはなお作業の途上にありますが、基本的なオペレーションや設定は機能している状態であることにご留意ください。
 
 
-本プロダクトの新しい用途を是非発見してください！
+本プロダクトの新しい用途をぜひ発見してください！
 
 ##利用方法
 Maven Centralにて公開する予定ですが、現時点では、Couchbase JCache implemaentationは、Couchbase社のMavenレポジトリより利用することができます。
 pom.xmlに以下の依存関係を追記します:
 
 
-`<dependencies>
+`<dependencies>`
     <dependency>
         <groupId>com.couchbase.client</groupId>
         <artifactId>java-cache</artifactId>
