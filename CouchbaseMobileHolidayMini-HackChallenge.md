@@ -9,7 +9,9 @@ December 23, 2014
 Wayne Carter
 
 ホリデー中に、ちょっとした息抜きはいかがですか？
-Couchbase Mobile Holiday Mini-Hack Challenge(https://github.com/couchbaselabs/mini-hacks/tree/master/kitchen-sync)に参加して30分程でオンライン・オフラインで動作するアプリケーションを作ってみませんか？
+Couchbase Mobile Holiday Mini-Hack Challenge(
+https://github.com/couchbaselabs/mini-hacks/tree/master/kitchen-sync
+)に参加して30分程でオンライン・オフラインで動作するアプリケーションを作ってみませんか？
 そのとおり - たったの30分です!
 
 我々は、モバイル開発者向けにミニ・ハックを製作しました、これはCouchbase Mobileを使った、高速・簡単・楽しいモバイル開発を体験していただけます。
