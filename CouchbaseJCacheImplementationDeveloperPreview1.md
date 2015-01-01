@@ -134,13 +134,17 @@ We saw that by default, the caching implementation tries to connect to a cluster
 ##JCache APIに関する一般の設定について
 
 The CouchbaseConfiguration is based on a default MutableConfiguration (which defines common settings from the API). One can change these settings either by mutating the configuration once it is built, or passing a CompleteConfiguration to be copied to the builder's useBase(CompleteConfiguration base) method.
-CouchbaseConfigurationは、デフォルトのMutableConfigurationを基本にしています()
+CouchbaseConfigurationは、デフォルトのMutableConfiguration(これは、APIから通常の設定行います)を基本にしています。
+ビルダーのuseBaseメソッド(CompleteConfigurationをベースにした)をコピーされるためのCompleteConfigurationをパッシングもしくは、一度ビルドした設定を変更することにより、設定を変更することができます。
+
 
 ##どのBucketを使用するか
 
 You have two options: either share a single bucket for multiple caches, prefixing the keys of each cache in the shared bucket, or use a dedicated bucket for a given cache.
+2つのオプションが選択できます: 複数のキャッシュのために唯一のbucketを共有し、この共有Bucketに各キャッシュに応じてプレフィックスしたkeyにより使用するか、もしくは、各キャッシュごとに専用のbucketを使用することになります。
 
 By default, a shared bucket named jcache is used (expected password: "jcache"). The default prefix is the name of the cache followed by an underscore.
+デフォルトでは、"jcached"という名称の共有Buket(パスワードは"jcache"と想定する)を使用します。
 
 Shared cache can be changed via useSharedBucket(String name, String password).
 Key prefix in a shared cache context can be changed by using withPrefix(String prefix).
