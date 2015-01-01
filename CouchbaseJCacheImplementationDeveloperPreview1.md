@@ -129,7 +129,7 @@ Note that cache managers are identified by an URI and a ClassLoader, and are onl
 ##Customizing The Way Caching Is Done キャッシング方法のカスタマイズ
 
 We saw that by default, the caching implementation tries to connect to a cluster reachable on localhost, and that we can use CouchbaseConfiguration.builder("cacheName").build() as a default for the configuration of a cache. But was can we customize through CouchbaseConfiguration?
-デフォルトにみられるように、キャッシングの実装は、ローカルホストの到達可能なクラスタに接続を試みます。そして、CouchbaseConfiguration.builder("cacheName").build()
+デフォルトにみられるように、キャッシングの実装は、ローカルホストの到達可能なクラスタに接続を試みます。そして、キャッシュの設定のために、デフォルトとしてCouchbaseConfiguration.builder("cacheName").build()が使用されます。しかし、CouchbaseConfigurationを通じて設定をカスタマイズできるでしょうか？
 
 ##Common Settings in the JCache API
 
