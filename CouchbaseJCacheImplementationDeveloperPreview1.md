@@ -153,9 +153,10 @@ By default, a shared bucket named jcache is used (expected password: "jcache"). 
 * Alternative method of using dedicated cache can be activated by using useDedicatedBucket(String name, String password) (it will reset the prefix).
 専用のキャッシュを使用する方法では、useDedicatedBucket(String name, String password)を使用することでアクティベートすることができます。(この呼び出しにより、プレフィックスはリセットされます)
 
-##Relying On Views To List All Items In A Cache
+##Viewを用いたキャッシュ内の全てのアイテムのリストの取得
 
 Part of the JCache API allows to get all items in a cache, or iterate over them. The best way to achieve that in Couchbase is to use views. So this implementations expects a view to be available to list all items in a cache.
+JCache APIの一部は、キャッシュ内の全てのアイテムを取得したり、イテレータとして取得することができます。この機能をCouchbaseで実現するベストな方法は、Viewを使用することです。
 
 By default, the expected design document and view are jcache and the cacheName.
 The design document can be changed by calling viewAllDesignDoc(String designDocName).
