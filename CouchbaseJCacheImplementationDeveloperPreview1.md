@@ -20,39 +20,25 @@ JCache specificaton は、開発者がアプリケーションの開発に際し
 Maven Centralにて公開する予定ですが、現時点では、Couchbase JCache implemaentationは、Couchbase社のMavenレポジトリより利用することができます。
 pom.xmlに以下の依存関係を追記します:
 
-
-`<dependencies>`
-
-`    <dependency>`
-
-`        <groupId>com.couchbase.client</groupId>`
-
-`        <artifactId>java-cache</artifactId>`
-
-`        <version>1.0.0-dp</version>`
-
-`    </dependency>`
-
-`</dependencies>`
+     <dependencies>
+     <dependency>
+     <groupId>com.couchbase.client</groupId>
+         <artifactId>java-cache</artifactId>
+         <version>1.0.0-dp</version>
+    </dependency>
+    </dependencies>
 
  
  
 
-`<repositories>`
-
-`    <repository>`
-
-`        <id>couchbase</id>`
-
-`        <name>couchbase repo</name>`
-
-`        <url>http://files.couchbase.com/maven2</url>`
-
-`        <snapshots><enabled>false</enabled></snapshots>`
-
-`    </repository>`
-
-`</repositories>`
+    <repositories>
+        <repository>
+            <id>couchbase</id>
+            <name>couchbase repo</name>
+            <url>http://files.couchbase.com/maven2</url>
+            <snapshots><enabled>false</enabled></snapshots>
+        </repository>`
+    </repositories>`
 
 
 その他の選択肢としては、直接jarファイル(http://files.couchbase.com/maven2/com/couchbase/client/java-cache/1.0.0-dp/)を取得することができます。(java-cache, java-client, java-coreライブラリも取得する必要があります。)
