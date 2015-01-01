@@ -156,11 +156,14 @@ By default, a shared bucket named jcache is used (expected password: "jcache"). 
 ##Viewを用いたキャッシュ内の全てのアイテムのリストの取得
 
 Part of the JCache API allows to get all items in a cache, or iterate over them. The best way to achieve that in Couchbase is to use views. So this implementations expects a view to be available to list all items in a cache.
-JCache APIの一部は、キャッシュ内の全てのアイテムを取得したり、イテレータとして取得することができます。この機能をCouchbaseで実現するベストな方法は、Viewを使用することです。
+JCache APIの一部は、キャッシュ内の全てのアイテムを取得したり、イテレータとして取得することができます。この機能をCouchbaseで実現するベストな方法は、Viewを使用することです。このため、本プロダクトでは、Viewにより、キャッシュ内の全てのアイテムのリストが取得できることを想定しています。
 
 By default, the expected design document and view are jcache and the cacheName.
+デフォルトでは、想定するデザインドキュメント名は"jcache"で、View名はcacheNameです。
 The design document can be changed by calling viewAllDesignDoc(String designDocName).
+このデザインドキュメントは、viewAllDesignDoc(String designDocName)により変更可能です。
 The view name can be changed by calling viewAllViewName(String viewName).
+View名は、viewAllViewName(String viewName)により変更可能です。
 Alternatively use viewAll(String designDocName, String viewName) to change both.
 The user is expected to create the correct view in the correct bucket for each cache. Don't forget that keys are probably prefixed in the bucket (unless you explicitely used a dedicated bucket).
 
@@ -170,7 +173,7 @@ This developer preview showcases the general direction we went with this impleme
 
 The remaining things to implement in order to have a full specification coverage are: - improving and completing statistics gathering - locking, atomicity of a sub-set of operations - adding support for listeners - adding support for EntryProcessors - implementing read-through and write-through - adding annotation support
 
-##Conclusion
+##最後に
 
 I hope this will be of interest to you. If you want to learn more about JCache or the Java SDK (and maybe come back here later), here are some resources:
 
