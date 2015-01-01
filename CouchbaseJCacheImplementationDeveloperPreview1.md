@@ -2,6 +2,9 @@
 原文
 http://blog.couchbase.com/jcache-dp1
 
+投稿日
+December 29, 2014
+
 原著者
 Simon Baslé
 
