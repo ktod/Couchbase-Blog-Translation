@@ -12,12 +12,17 @@ Wayne Carter
 Couchbase Mobile Holiday Mini-Hack Challenge(https://github.com/couchbaselabs/mini-hacks/tree/master/kitchen-sync)に参加して30分程でオンライン・オフラインで動作するアプリケーションを作ってみませんか？
 そのとおり - たったの30分です!
 
-We created the mini hack to give mobile developers a fast, easy, and fun way to explore development with Couchbase Mobile. It consists of a small challenge involving a basic set of Couchbase Mobile APIs for building a mobile app that works both online and offline. And it can be done in 30 minutes.
+我々は、モバイル開発者向けにミニ・ハックを製作しました、これはCouchbase Mobileを使った、高速・簡単・楽しいモバイル開発を体験していただけます。
+ベーシックなCouchbase Mobile APIを使った小規模なミニ・ハックからなり、オンライン・オフラインの両方で動作するモバイルアプリケーションをビルドします。所要時間は30分です。
 
-The mini-hack is designed to stimulate developers of all skill levels—it comes with step-by-step instructions to guide you if you get stuck. You can find all of the details in this GitHub repository(https://github.com/couchbaselabs/mini-hacks/tree/master/kitchen-sync).
+このミニ・ハックは、あらゆるレベルの開発者向けに刺激を与えるようにデザインされており、もしもあなたが立ち往生した場合に、ガイドとなる、ステップ・バイ・ステップの解説が載っています。あなたは詳細をGitHubから確認することもできます。
+(https://github.com/couchbaselabs/mini-hacks/tree/master/kitchen-sync).
 
-Check it out, have fun, and tell us what you think(https://docs.google.com/forms/d/1Qs9svNccKCC5iji6NXC35uCvdmtFzB0dopz57iApSnY/viewform).
+ぜひ、この年の瀬にチェックして、楽しんで、そしてわたくしたちにどう思ったかフィードバックしてください
+(https://docs.google.com/forms/d/1Qs9svNccKCC5iji6NXC35uCvdmtFzB0dopz57iApSnY/viewform).
 
-Happy Holidays!
+ハッピー・ホリデー!
+
 Wayne Carter
+
 Chief Architect of Mobile
