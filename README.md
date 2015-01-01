@@ -1,5 +1,6 @@
 #Couchbase Blog Translation
-Couchbase Blogに掲載された記事の日本語訳を掲載します。
+個人的な備忘録のため、
+Couchbase Blogに掲載された記事を日本語訳したものをここに記す。
 
 オリジナルソース
 http://blog.couchbase.com
