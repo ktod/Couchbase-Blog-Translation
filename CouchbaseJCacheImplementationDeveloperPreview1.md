@@ -17,7 +17,7 @@ JCache specificaton は、開発者がアプリケーションの開発に際し
 本プロダクトの新しい用途をぜひ発見してください！
 
 ##利用方法
-Maven Centralにて公開する予定ですが、現時点では、Couchbase JCache implemaentationは、Couchbase社のMavenレポジトリより利用することができます。
+Maven Centralにて公開する予定ですが、現時点では、Couchbase社のMavenレポジトリより利用することができます。
 `pom.xml`に以下の依存関係を追記します:
 
      <dependencies>
