@@ -130,7 +130,7 @@ CouchbaseConfigurationは、MutableConfiguration(これはAPIから通常の設�
 
 2つのオプションが選択できます: 複数のキャッシュのために唯一のbucketを共有し、この共有Bucketに各キャッシュに応じて各keyにプレフィックスを付与することにより使用する方法か、もしくは、各キャッシュごとに専用のbucketを使用する方法です。
 
-デフォルトでは、"jcached"という名称の共有Buket(パスワードは"jcache"と想定する)を使用します。(Keyに付与される)デフォルトのプレフィックスは、キャッシュ名+アンダースコア("_")となります。
+デフォルトでは、"jcached"という名称の共有Buket(パスワードは"jcache")を使用します。(Keyに付与される)デフォルトのプレフィックスは、キャッシュ名+アンダースコア("_")となります。
 
 * 共有キャッシュは、useSharedBucket(String name, String password)を通じて設定を変更することができます。
 * 共有キャッシュ中のKeyのプレフィックスは、withPrefix(String prefix)を使用することで変更することができます。
