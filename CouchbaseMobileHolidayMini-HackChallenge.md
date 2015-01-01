@@ -1,5 +1,9 @@
+#Couchbase Mobile Holiday Mini-Hack Challenge
 原文
 http://blog.couchbase.com/couchbase-mobile-holiday-mini-hack-challenge
+
+投稿日
+December 23, 2014
 
 原著者
 Wayne Carter
