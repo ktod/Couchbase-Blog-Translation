@@ -86,22 +86,41 @@ Once that is the case, the following snippet can be run:
 
 
 `CouchbaseCachingProvider cachingProvider = new CouchbaseCachingProvider();`
+
 `//if your cluster has no localhost node, customize the bootstrap list`
+
 `//cachingProvider.setBootstrap("192.168.1.2", "node3.mydomain.org");`
+
 `//if you already use the Java SDK somewhere else in your application, you should reuse Environment`
+
 `//cachingProvider.setEnvironment(myCouchbaseEnvironmentUsedSomewhereElse);`
+
 ``
+
 `//create a cache manager identified by the default URI and ClassLoader`
+
 `CouchbaseCacheManager cacheManager = cachingProvider.getCacheManager();`
+
 ``
+
 `//create a cache named myFirstCache`
-`CouchbaseCache<String, String> cache = cacheManager.createCache("myFirstCache",` `CouchbaseConfiguration.builder("myFirstCache").build());`
+
+`CouchbaseCache<String, String> cache = cacheManager.createCache("myFirstCache",` 
+
+`CouchbaseConfiguration.builder("myFirstCache").build());`
+
 ``
+
 `//cache a String`
+
 `cache.put("myKey", "myValue");`
+
 ``
+
 `//get it back from the cache`
+
 `String inCache = cache.get("myKey");`
+
 
 
 Note that cache managers are identified by an URI and a ClassLoader, and are only created if no previous CacheManager was registered for the same identifiers (otherwise the method returns the existing manager).
