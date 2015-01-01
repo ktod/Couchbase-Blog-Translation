@@ -24,4 +24,5 @@ Couchbase Mobile Holiday Mini-Hack Challenge(https://github.com/couchbaselabs/mi
 ハッピー・ホリデー!
 
 Wayne Carter
+
 Chief Architect of Mobile
