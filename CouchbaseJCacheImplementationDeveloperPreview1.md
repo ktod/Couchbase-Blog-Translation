@@ -2,7 +2,7 @@
 原文
 http://blog.couchbase.com/jcache-dp1
 
-著者
+原著者
 Simon Baslé
 
 SDKエンジニアリングチームを代表して、私は、JCache specification(JSR107)の実装が完了し、デベロッパープレビューを利用可能になったことをアナウンスいたします。
