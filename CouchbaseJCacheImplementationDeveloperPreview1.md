@@ -37,8 +37,8 @@ Maven Centralにて公開する予定ですが、現時点では、Couchbase社�
             <name>couchbase repo</name>
             <url>http://files.couchbase.com/maven2</url>
             <snapshots><enabled>false</enabled></snapshots>
-        </repository>`
-    </repositories>`
+        </repository>
+    </repositories>
 
 
 その他の選択肢としては、直接jarファイル(
