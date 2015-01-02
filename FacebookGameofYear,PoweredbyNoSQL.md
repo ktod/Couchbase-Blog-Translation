@@ -15,12 +15,11 @@ http://time.com/3626297/facebook-games-2014/
 これは、ごく短期間のハイパー成長と継続的な長期の成功を利用する機会に恵まれました。このことは一種のチャレンジでした。
 SGNは、Cookie Jamを5月にリリースしました、そして、数ヶ月の内にFacebook上の500万ものプレイヤーを獲得し、そして先週、Facebookのゲームオブイヤーの栄冠に輝きました。 - 全ては8ヶ月の内に起こったことです。(
 http://www.businessinsider.com/facebook-names-cookie-jam-the-new-candy-crush-2014-12
-)
-However, Facebook recognizes the importance of ensuring developers can publish games to Facebook and mobile platforms (
+)しかしながら、Facebookは2015年にデベロッパーがFacebookとモバイルプラットフォーム向けにゲームを公開することを可能にすることの重要性を認識しました。  (
 http://www.theguardian.com/technology/2014/dec/09/facebook-cookie-jam-best-game-candy-crush
-)in 2015.
+)
 
-A social, mobile game must meet high performance and availability requirements to meet increasing user experience expectations. The app must be responsive. If it’s slow or appears slow or is unresponsive, users will not play it. They may never play it again. The app requires sub-millisecond access to data, and it must be available 24 hours a day, 365 days a year. These are the requirements on day one. When it becomes a hit, it faces a new challenge - scalability.
+ソーシャル・モバイルゲームにおいては、高いパフォーマンスと、ユーザ・エクスペリエンスの向上に対応できる許容性が不可欠です。アプリケーションは高いレスポンスが不可欠です。もしも、アプリケーションが遅かったり、遅さを見せたり、レスポンスを返さないと、ユーザはそのゲームをプレイしてくれません。おそらくプレイヤーは二度とプレィしてくれなくなるでしょう。アプリケーションは、ミリセカンド以下のデータアクセスが求められます。そして24時間×365日サービスを提供し続けなければなりません。この要件はそのサービスの初日から求められます。もしもアプリケーションがヒットしたならば、新しいチャレンジに直面します。 - スケーラビリティです。
 
 Today, Cookie Jam provides the same user experience with 5 million players it did the day it was released. In 8 months, SGN scaled its infrastructure to support millions of users without suffering downtime or performance degradation. SGN leveraged NoSQL. In particular, Couchbase Server. SGN was maintaining a few nodes in May to support the social, mobile games they’ve released. They added a few more nodes to support the growth of Cookie Jam, and they did it without suffering downtime. With several nodes, SGN supports millions of Cookie Jam players.
 
