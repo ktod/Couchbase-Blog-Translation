@@ -21,7 +21,10 @@ http://www.theguardian.com/technology/2014/dec/09/facebook-cookie-jam-best-game-
 
 ソーシャル・モバイルゲームにおいては、高いパフォーマンスと、ユーザ・エクスペリエンスの向上に対応できる許容性が不可欠です。アプリケーションは高いレスポンスが不可欠です。もしも、アプリケーションが遅かったり、遅さを見せたり、レスポンスを返さないと、ユーザはそのゲームをプレイしてくれません。おそらくプレイヤーは二度とプレィしてくれなくなるでしょう。アプリケーションは、ミリセカンド以下のデータアクセスが求められます。そして24時間×365日サービスを提供し続けなければなりません。この要件はそのサービスの初日から求められます。もしもアプリケーションがヒットしたならば、新しいチャレンジに直面します。 - スケーラビリティです。
 
-Today, Cookie Jam provides the same user experience with 5 million players it did the day it was released. In 8 months, SGN scaled its infrastructure to support millions of users without suffering downtime or performance degradation. SGN leveraged NoSQL. In particular, Couchbase Server. SGN was maintaining a few nodes in May to support the social, mobile games they’ve released. They added a few more nodes to support the growth of Cookie Jam, and they did it without suffering downtime. With several nodes, SGN supports millions of Cookie Jam players.
+今日、Cookie Jamは、500万プレイヤーに対してリリース当初と同様のユーザエクスペリエンスを提供しています。
+8ヶ月の間に、SGNは、ダウンタイムや、パフォーマンスの低下を招かずにユーザサポートを100万人規模にまでスケールしました。
+SGNはNoSQLを、中でもCouchbase Serverを導入しました。
+SGN was maintaining a few nodes in May to support the social, mobile games they’ve released. They added a few more nodes to support the growth of Cookie Jam, and they did it without suffering downtime. With several nodes, SGN supports millions of Cookie Jam players.
 
 SGN may be one of the big 10 gaming companies, but Chris DeWolfe, CEO, believes(
 http://www.builtinla.com/2014/05/05/what-you-need-know-about-mobile-gaming-according-sgn-s-chris-dewolfe
