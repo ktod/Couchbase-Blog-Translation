@@ -8,9 +8,12 @@ December 18, 2014
 原著者
 Doug Laird
 
-SGN のCookie Jamは、Facebookのゲームオブザイヤーに選ばれました(
+SGNのCookie Jamは、Facebookのゲームオブザイヤーに選ばれました(
 http://time.com/3626297/facebook-games-2014/
-). There is a sweet spot at the intersection of social, mobile, and gaming. It’s an opportunity to leverage instant hyper growth to create and maintain long-term success, and it’s a challenge. SGN launched Cookie Jam in May, and within months it supported 5 million players on Facebook, and last week it became Facebook’s Game of the Year - all within 8 months.(
+). 
+この作品は、ソーシャル・モバイル・ゲーミングの交差点に位置しています。
+これは、ごく短期間のハイパー成長と継続的な長期の成功を利用する機会に恵まれました。このことは一種のチャレンジでした。
+SGNは、Cookie Jamを5月にリリースしました、そして、数ヶ月の内にFacebook上の500万ものプレイヤーを獲得し、そして先週、Facebookのゲームオブイヤーの栄冠に輝きました。 - 全ては8ヶ月の内に起こったことです。(
 http://www.businessinsider.com/facebook-names-cookie-jam-the-new-candy-crush-2014-12
 )
 However, Facebook recognizes the importance of ensuring developers can publish games to Facebook and mobile platforms (
