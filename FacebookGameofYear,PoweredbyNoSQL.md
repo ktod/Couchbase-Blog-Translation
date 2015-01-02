@@ -8,7 +8,7 @@ December 18, 2014
 原著者
 Doug Laird
 
-Cookie Jam by Social Gaming Network (SGN) is Facebook’s Game of the Year(
+SGN のCookie Jamは、Facebookのゲームオブザイヤーに選ばれました(
 http://time.com/3626297/facebook-games-2014/
 ). There is a sweet spot at the intersection of social, mobile, and gaming. It’s an opportunity to leverage instant hyper growth to create and maintain long-term success, and it’s a challenge. SGN launched Cookie Jam in May, and within months it supported 5 million players on Facebook, and last week it became Facebook’s Game of the Year - all within 8 months.(
 http://www.businessinsider.com/facebook-names-cookie-jam-the-new-candy-crush-2014-12
