@@ -24,8 +24,9 @@ http://www.theguardian.com/technology/2014/dec/09/facebook-cookie-jam-best-game-
 今日、Cookie Jamは、500万プレイヤーに対してリリース当初と同様のユーザエクスペリエンスを提供しています。
 8ヶ月の間に、SGNは、ダウンタイムや、パフォーマンスの低下を招かずにユーザサポートを100万人規模にまでスケールしました。
 SGNはNoSQLを、中でもCouchbase Serverを導入しました。
-SGN was maintaining a few nodes in May to support the social, mobile games they’ve released. They added a few more nodes to support the growth of Cookie Jam, and they did it without suffering downtime. With several nodes, SGN supports millions of Cookie Jam players.
+SGNは、5月中は、リリースしたソーシャルモバイルゲームのために数台のノードをメンテナンスしていました。彼らは、さらに数台のノードをCookie Jamの成長に合わせて追加しました。そして、この間ダウンタイムに見舞われることはありませんでした。数台のノードで、SGNは数百万のCookie Jamプレイシャーをサポートしました。
 
+SGNは、トップ10に入るゲーム会社ですが、CEOのChris DeWolfeは信じています
 SGN may be one of the big 10 gaming companies, but Chris DeWolfe, CEO, believes(
 http://www.builtinla.com/2014/05/05/what-you-need-know-about-mobile-gaming-according-sgn-s-chris-dewolfe
 ) it’s not too late for game developers and studios to join the party. SGN plans to release four or five games a year, assuming they will be hits, and to continue to add new content and features to existing games. DeWolfe recommends game developers begin with proofs of concepts. This requires agility, flexibility, and efficiency.
