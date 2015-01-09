@@ -34,7 +34,8 @@ SGNは年に4〜5タイトルのゲームをリリースすることを計画し
 DeWolfeはゲームデベロッパーにPOCを始めることを推奨しています。POCの要件は敏捷性(agility),柔軟性(flexibility),効率性(efficiency)です。
 
 Couchbase Serverは、ドキュメント型データベースで、JSONに基づく柔軟なデータモデルを提供します。スキーマレスのデータモデルは、アプリケーション開発者がデータモデルを定義することを可能にします。そして、繰り返し繰り返し、スキマーの変更についてのリクエストをしてその変更を待つ必要はありません。
-ゲームをリリースした後に、
+ゲームをリリースした後は、オンプレミスもしくはクラウド上で小規模なクラスタを使用してこれらをサポートする可能性があります。このゲームがヒットした後は、開発者は、継続して、新しいコンテンツと機能を追加することになります。これは、同じ俊敏性と柔軟性
+
 After a game is released, it can be supported with a small cluster on-premise or in the cloud. After it becomes a hit, developers can continue to add new content and features with the same agility and flexibility leveraged during initial development. As the number of players continues to increases, Couchbase Server nodes can be added on-demand, as necessary to support more users while maintaining performance. It’s a cost effective solution for developing and maintaining social, mobile games.
 
 Today, developers can build social, mobile games even faster with Couchbase Mobile. Couchbase Mobile includes a lightweight, embedded database for native, offline data access and a synchronization gateway to push and pull data from Couchbase Server. It’s a cross platform solution that relieves developers from having to write custom data access and synchronization code. Whereas iCloud is limited to Apple and iOS and Cloud Save is limited to Google and Android, Couchbase Mobile enables developers to synchronized data across different platforms with a database deployed to the cloud of their choice.
