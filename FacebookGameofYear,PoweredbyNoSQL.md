@@ -26,10 +26,11 @@ http://www.theguardian.com/technology/2014/dec/09/facebook-cookie-jam-best-game-
 SGNはNoSQLを、中でもCouchbase Serverを導入しました。
 SGNは、5月中は、リリースしたソーシャルモバイルゲームのために数台のノードをメンテナンスしていました。彼らは、さらに数台のノードをCookie Jamの成長に合わせて追加しました。そして、この間ダウンタイムに見舞われることはありませんでした。数台のノードで、SGNは数百万のCookie Jamプレイシャーをサポートしました。
 
-SGNは、トップ10に入るゲーム会社ですが、CEOのChris DeWolfeは信じています
+SGNは、トップ10に入るゲーム会社ですが、CEOのChris DeWolfeはゲーム開発者やスタジオにとって、パーティに参加するには遅すぎることはないと信じています
 SGN may be one of the big 10 gaming companies, but Chris DeWolfe, CEO, believes(
 http://www.builtinla.com/2014/05/05/what-you-need-know-about-mobile-gaming-according-sgn-s-chris-dewolfe
-) it’s not too late for game developers and studios to join the party. SGN plans to release four or five games a year, assuming they will be hits, and to continue to add new content and features to existing games. DeWolfe recommends game developers begin with proofs of concepts. This requires agility, flexibility, and efficiency.
+)  
+SGN plans to release four or five games a year, assuming they will be hits, and to continue to add new content and features to existing games. DeWolfe recommends game developers begin with proofs of concepts. This requires agility, flexibility, and efficiency.
 
 Couchbase Server is a document database. It features a flexible data model based on JSON. A schemaless data model enables app developers to define the data model and to iterate without having to request and wait for schema changes. After a game is released, it can be supported with a small cluster on-premise or in the cloud. After it becomes a hit, developers can continue to add new content and features with the same agility and flexibility leveraged during initial development. As the number of players continues to increases, Couchbase Server nodes can be added on-demand, as necessary to support more users while maintaining performance. It’s a cost effective solution for developing and maintaining social, mobile games.
 
