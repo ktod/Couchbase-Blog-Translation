@@ -30,7 +30,7 @@ SGNは、トップ10に入るゲーム会社ですが、CEOのChris DeWolfeは�
 (
 http://www.builtinla.com/2014/05/05/what-you-need-know-about-mobile-gaming-according-sgn-s-chris-dewolfe
 )
-SGNは計画している
+SGNは年に4〜5タイトルのゲームをリリースすることを計画している。これらがヒットすると仮定して、そして新しいコンテンツを追加し、既存のゲームに対する新しいフィーチャー
 SGN plans to release four or five games a year, assuming they will be hits, and to continue to add new content and features to existing games. DeWolfe recommends game developers begin with proofs of concepts. This requires agility, flexibility, and efficiency.
 
 Couchbase Server is a document database. It features a flexible data model based on JSON. A schemaless data model enables app developers to define the data model and to iterate without having to request and wait for schema changes. After a game is released, it can be supported with a small cluster on-premise or in the cloud. After it becomes a hit, developers can continue to add new content and features with the same agility and flexibility leveraged during initial development. As the number of players continues to increases, Couchbase Server nodes can be added on-demand, as necessary to support more users while maintaining performance. It’s a cost effective solution for developing and maintaining social, mobile games.
