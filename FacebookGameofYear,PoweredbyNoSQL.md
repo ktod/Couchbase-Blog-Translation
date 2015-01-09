@@ -27,7 +27,7 @@ SGNはNoSQLを、中でもCouchbase Serverを導入しました。
 SGNは、5月中は、リリースしたソーシャルモバイルゲームのために数台のノードをメンテナンスしていました。彼らは、さらに数台のノードをCookie Jamの成長に合わせて追加しました。そして、この間ダウンタイムに見舞われることはありませんでした。数台のノードで、SGNは数百万のCookie Jamプレイシャーをサポートしました。
 
 SGNは、トップ10に入るゲーム会社ですが、CEOのChris DeWolfeはゲーム開発者やスタジオにとって、パーティに参加するには遅すぎることはないと信じています
-SGN may be one of the big 10 gaming companies, but Chris DeWolfe, CEO, believes(
+(
 http://www.builtinla.com/2014/05/05/what-you-need-know-about-mobile-gaming-according-sgn-s-chris-dewolfe
 )  
 SGN plans to release four or five games a year, assuming they will be hits, and to continue to add new content and features to existing games. DeWolfe recommends game developers begin with proofs of concepts. This requires agility, flexibility, and efficiency.
