@@ -34,9 +34,10 @@ SGNは年に4〜5タイトルのゲームをリリースすることを計画し
 DeWolfeはゲームデベロッパーにPOCを始めることを推奨しています。POCの要件は敏捷性(agility),柔軟性(flexibility),効率性(efficiency)です。
 
 Couchbase Serverは、ドキュメント型データベースで、JSONに基づく柔軟なデータモデルを提供します。スキーマレスのデータモデルは、アプリケーション開発者がデータモデルを定義することを可能にします。そして、繰り返し繰り返し、スキマーの変更についてのリクエストをしてその変更を待つ必要はありません。
-ゲームをリリースした後は、オンプレミスもしくはクラウド上で小規模なクラスタを使用してこれらをサポートする可能性があります。このゲームがヒットした後は、開発者は、初期構築時と同様の迅速さと柔軟性をもって、継続的に新しいコンテンツと機能を追加することができるようになります。プレイヤーの人口増加が続くに応じて、より多くのユーザに対して十分なパフォーマンスを提供するため、Couchbase Serverノードは、オンデマンドで追加されます。
-As the number of players continues to increases, Couchbase Server nodes can be added on-demand, as necessary to support more users while maintaining performance. It’s a cost effective solution for developing and maintaining social, mobile games.
+ゲームをリリースした後は、オンプレミスもしくはクラウド上で小規模なクラスタを使用してこれらをサポートする可能性があります。このゲームがヒットした後は、開発者は、初期構築時と同様の迅速さと柔軟性をもって、継続的に新しいコンテンツと機能を追加することができるようになります。
+プレイヤーの人口増に応じて、Couchbase Serverノードは、オンデマンドで追加して、より多くのユーザに必要なパフォーマンスを提供することができます。これは開発者にとって、ソーシャルゲームやモバイルゲームの開発やメンテナンスのためのコスト効率のよいソリューションとなります。
 
-Today, developers can build social, mobile games even faster with Couchbase Mobile. Couchbase Mobile includes a lightweight, embedded database for native, offline data access and a synchronization gateway to push and pull data from Couchbase Server. It’s a cross platform solution that relieves developers from having to write custom data access and synchronization code. Whereas iCloud is limited to Apple and iOS and Cloud Save is limited to Google and Android, Couchbase Mobile enables developers to synchronized data across different platforms with a database deployed to the cloud of their choice.
+今日、開発者は、ソーシャルゲームやモバイルゲームをCouchbase Mobileを使ってより高速に構築することができます。Couchbase Mobileには、ネイティブで動作し、オフライン時のデータアクセスが可能で、Sync Gatewayを介してCouchbase Serverからデータをプッシュ／プルすることができる、軽量で、組み込み型のデータベースが付属します。
+これはクラス・プラットフォームのソリューションとなっており、開発者がカスタムメイドのアクセス・同期コードを書くことから開放します。iCouldは、AppleとiOSのみに制限され、Cloud Saveは、GooleとAndroidに制限されます。Couchbase Mobileは、開発者が、異なるプラットフォーム間でデータを同期させる（任意のクラウド上でデプロイされたデータベースを介して）ことを可能にします。
 
-When it comes to social, mobile gaming, NoSQL is the future.
+NoSQLの未来は、これが、ソーシャルに、モバイルゲーミングに広く使われるようになったとき訪れるのです。
