@@ -20,6 +20,9 @@ Oh and by the way, we've also pushed some changes that should improve the perfor
 
 ##Getting the SDK
 
+<script src="https://gist.github.com/msng/cc93db44222421b4121c.js"></script>
+
+
 <script type="text/javascript">
     var showStr = '<div>こんにちは。</div>';  
     document.write(showStr);
