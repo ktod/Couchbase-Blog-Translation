@@ -19,6 +19,7 @@ In this blog post we'll be focussing on the new features. If you want to check o
 Oh and by the way, we've also pushed some changes that should improve the performance under certain workloads. Even if there are no benchmarks in this blog post, there is a good chance that you'll see improved latency and throughput compared to 2.0.3.
 
 ##Getting the SDK
+
 <script type="text/javascript">
     var showStr = '<div>こんにちは。</div>';  
     document.write(showStr);
