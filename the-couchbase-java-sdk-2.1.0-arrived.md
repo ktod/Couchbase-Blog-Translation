@@ -20,18 +20,13 @@ Oh and by the way, we've also pushed some changes that should improve the perfor
 
 ##Getting the SDK
 
-<script src="https://gist.github.com/msng/cc93db44222421b4121c.js"></script>
 
-
-<script type="text/javascript">
-    var showStr = '<div>こんにちは。</div>';  
-    document.write(showStr);
-</script>
 
 <p>As always, we are distributing the GA release from <a href="http://search.maven.org/#artifactdetails%7Ccom.couchbase.client%7Cjava-client%7C2.1.0%7Cjar">Maven Central</a> and as an <a href="http://packages.couchbase.com/clients/java/2.1.0/Couchbase-Java-Client-2.1.0.zip">archive</a>.</p>
+```
 <script src="https://gist.github.com/daschl/87edfca23b4f52cab4f0.js"></script>
+```
 
-As always, we are distributing the GA release from Maven Central and as an archive.
 This release brings official (yet still experimental) support for N1QL DP4. It is not backwards compatible with DP3 because the underlying streaming responses have changed quite a bit. Highlights include:
 
 Simple, parametrized and prepared Statements.
