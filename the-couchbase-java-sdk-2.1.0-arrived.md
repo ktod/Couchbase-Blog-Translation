@@ -8,8 +8,8 @@ February 4, 2015
 原著者
 Michael Nitschinger
 
-
-On behalf of the whole team I'm happy to report that we've finally released the 2.1.0 version of the Couchbase Java SDK. Compared to the 2.0 branch it brings lots of new features as well as a myriad of smaller enhancements and bug fixes. It is the result of the incredible valuable feedback that we received from more and more users that are upgrading their applications as well as new users exploring reactive data access patterns.
+チーム全体を代表して、私はCouchbase Java SDK 2.1.0がついにリリースされたことをご報告します。
+Compared to the 2.0 branch it brings lots of new features as well as a myriad of smaller enhancements and bug fixes. It is the result of the incredible valuable feedback that we received from more and more users that are upgrading their applications as well as new users exploring reactive data access patterns.
 
 In this blog post we'll be focussing on the new features. If you want to check out the full list of changes, please refer to the Release Notes. If you have questions you can ask them on the Forums and if you think you've hit an issue, please file it on our JIRA.
 
