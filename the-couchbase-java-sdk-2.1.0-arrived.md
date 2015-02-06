@@ -13,16 +13,16 @@ Michael Nitschinger
 
 これは、ますます多くのユーザがアプリケーションをアップグレードすることと同じく、新しいユーザがリアクティブ・データアクセス・パターンを探求したことにより、素晴らしい価値あるフィードバックがもたらされた結果です。
 
-このブログポスト
-In this blog post we'll be focussing on the new features. If you want to check out the full list of changes, please refer to the Release Notes. If you have questions you can ask them on the Forums and if you think you've hit an issue, please file it on our JIRA.
+このブログポストでは、私は新しい機能についてフォーカスします。もしも全ての変更点についてチェックしたい場合は、リリースノートを参照してください。質問に関しては、フォーラムでいつでも質問できます、また、もしもあなたが、issueであると考えた場合には、我々のJIRAに登録してください。
 
-Oh and by the way, we've also pushed some changes that should improve the performance under certain workloads. Even if there are no benchmarks in this blog post, there is a good chance that you'll see improved latency and throughput compared to 2.0.3.
+ところで、私はいくつかの変更点を追加しました、これは、特定のワークロード下ではパフォマンスを改善をもたらします。
+本ブログポストには、ベンチマークを掲載していませんが、2.0.3と性能比較すると性能が改善していることを確認できるでしょう。
 
-##Getting the SDK
+##SDKの入手方法
 
 
-
-<p>As always, we are distributing the GA release from <a href="http://search.maven.org/#artifactdetails%7Ccom.couchbase.client%7Cjava-client%7C2.1.0%7Cjar">Maven Central</a> and as an <a href="http://packages.couchbase.com/clients/java/2.1.0/Couchbase-Java-Client-2.1.0.zip">archive</a>.</p>
+私は、リリースバージョンを公開しています
+<a href="http://search.maven.org/#artifactdetails%7Ccom.couchbase.client%7Cjava-client%7C2.1.0%7Cjar">Maven Central</a> and as an <a href="http://packages.couchbase.com/clients/java/2.1.0/Couchbase-Java-Client-2.1.0.zip">archive</a>
 ```
 <script src="https://gist.github.com/daschl/87edfca23b4f52cab4f0.js"></script>
 ```
