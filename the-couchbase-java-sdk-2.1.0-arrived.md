@@ -21,9 +21,9 @@ Michael Nitschinger
 ##SDKの入手方法
 
 
-私は、リリースバージョンを公開しています
-<a href="http://search.maven.org/#artifactdetails%7Ccom.couchbase.client%7Cjava-client%7C2.1.0%7Cjar">Maven Central</a> and as an <a href="http://packages.couchbase.com/clients/java/2.1.0/Couchbase-Java-Client-2.1.0.zip">archive</a>
-```
+リリースバージョンを
+<a href="http://search.maven.org/#artifactdetails%7Ccom.couchbase.client%7Cjava-client%7C2.1.0%7Cjar">Maven Central</a> で公開しています。また <a href="http://packages.couchbase.com/clients/java/2.1.0/Couchbase-Java-Client-2.1.0.zip">アーカイブ</a>も提供しています。
+```ruby:qiita.rb
 <script src="https://gist.github.com/daschl/87edfca23b4f52cab4f0.js"></script>
 ```
 
