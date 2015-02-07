@@ -65,8 +65,9 @@ Spatial Viewで定義できるデータフォーマットをベースにして�
 
 ##Pluggableリトライ戦略
 
-A heavily requested feature was to provide ways to fail fast if the request cannot be dispatched immediately. For example the time between a node fails and it is failed over in the cluster a subset of the documents cannot be written (all that target the specific partitions on this node). By default, the SDK will retry the operation a bit later and eventually it will time out on the caller side.
+多数の方からリクエストされた機能として、リクエストを直ちにディスパッチすることが不可能である場合に、早期に失敗させる方法の提供というものがありました。例えば、ノード障害や、クラスタのフェールオーバの間、ドキュメントの一部（この対象となったノード上に存在する（ドキュメント集合全体のうちの）特定のパーティションについては全てのターゲット（ドキュメント））は、書き込むことができません。デフォルトでは、SDKは、少し後になって、オペレーションをリトライを試み、最終的には呼び出し側のタイムアウトに至るでしょう。
 
+新しい、フェール・ファーストモードでは、これまでに代わり、直ちにリクエストをキャンセルし、（リクエストがリトライすべきか否かを判断可能な）呼び出し側へ、より早期にフィードバック・ループを提供します。
 The new fail fast mode instead would immediately cancel the request, providing faster feedback loops to the caller who then can determine if the request should be retried or not. This new strategy can be enabled on the environment like this:
 
 
