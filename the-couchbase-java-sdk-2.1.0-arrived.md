@@ -70,10 +70,11 @@ Spatial Viewで定義できるデータフォーマットをベースにして�
 新しい、フェール・ファーストモードでは、これまでに代わり、直ちにリクエストをキャンセルし、（リクエストがリトライすべきか否かを判断可能な）呼び出し側へ、より早期にフィードバック・ループを提供します。
 この新しい戦略は、環境上で以下のようなことが可能になるでしょう：
 
-加えて、私たちは
-In addition, we made the retry strategy pluggable so you can even define your own. Since this is quite advanced it is not covered in this blog post, but you can expect more information soon in the documentation on that topic. In the meantime if you are curious, just check out the (quite simple) strategies that ship with the SDK.
+加えて、私たちは、Pluggableなリトライ戦略を用意しました、これにより、開発者自身が（リクエスト処理についての挙動を）独自に定義することができるようになりました。このため本質的に前進しました。本プログポストでは、このトピックについてカバーしていませんが、間も無くドキュメントが提供され、より多くの情報がもたらされるでしょう。
+それまでの間、もしも興味があれば、SDKで提供された（ごく単純な）戦略についてチェックだけしてみてください。
 
-Finally, a configurable "maximum request lifetime" has been added to the environment which is utilized by the default "best effort" strategy to determine if the request should still be retried or is cancelled instead. This is needed in order to avoid requests circling around for a very long time and take up precious slots in the RingBuffers.
+最後に、コンフィギュアラブルな"最大リクエスト・ライフタイム"が本環境に追加されました。これは、デフォルトの"ベスト・エフォット"戦略で、リクエストがリトライされるべきか、又はキャンセルされるべきかを決定するために利用されます。
+これは、リクエストが非常に長い間繰り返されるのを回避するために、そしてリングバッファ内の貴重なスロットを巻き取るために必要です。
 
 ##Subscribable Event Bus
 
