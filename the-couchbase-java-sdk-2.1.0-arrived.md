@@ -51,17 +51,18 @@ Spatial Viewで定義できるデータフォーマットをベースにして�
 
 さらに、3次元空間（地理×時刻）に対するクエリも行うことができます。位置情報(Bounding Box)と時間帯情報(Time Range)を条件として、開店している店舗に対する検索を行うことができます。
 
-今後ブログポスト＆サンプルを追加していきます。近い将来に私達は、Couchbase Serverがフルサポート版が提供されることを期待できます。
+今後ブログポスト＆サンプルを追加していきます。近い将来に私達は、（Spatial Viewについて）Couchbase Server側でフルサポート版が提供されることを期待できます。
 
 
 ##アイドルサポート(Heartbeats/Keepalive)
 
-When there is no load going through the client to a specific socket, there is a chance that a firewall (or something else) is cutting off the connection because it thinks it is stale. In order to prevent this, the SDK now sends a heartbeat message every 30 seconds over idle sockets. These messages are of course not sent if regular traffic is flowing in this interval.
+特定のソケットへのクライアント接続について、データロードが何も無い場合、フィアーウォール(もしくはその他の機器)が、不要となったコネクションであると判断し、この接続を切断する可能性があります。
+これを防ぐため、SDKは、アイドル状態のソケットについて、ハートビート・メッセージを30秒毎に送信しています。これらのメッセージは、もちろんもしも通常のトラフィックが一定のインターバルの内に流れている場合には送信されません。
 
-You can change the interval on the environment and if you want to disable it just set it to 0.
+このインターバルについて、変更することができるようになりました、また、この値を0にすることで、このインタバールを機能停止にすることができるようになりました。
 
 
-Pluggable Retry Strategies
+##Pluggableリトライ戦略
 
 A heavily requested feature was to provide ways to fail fast if the request cannot be dispatched immediately. For example the time between a node fails and it is failed over in the cluster a subset of the documents cannot be written (all that target the specific partitions on this node). By default, the SDK will retry the operation a bit later and eventually it will time out on the caller side.
 
@@ -72,7 +73,7 @@ In addition, we made the retry strategy pluggable so you can even define your ow
 
 Finally, a configurable "maximum request lifetime" has been added to the environment which is utilized by the default "best effort" strategy to determine if the request should still be retried or is cancelled instead. This is needed in order to avoid requests circling around for a very long time and take up precious slots in the RingBuffers.
 
-Subscribable Event Bus
+##Subscribable Event Bus
 
 A generic event bus has been added to the environment which is utilized by the core and the client to publish events to potential application subscribers. Currently, only Bucket open/close and Node connect/disconnect events are published, but in the future we plan to greatly extend this by also collecting and publishing performance metrics and other types of events and warnings.
 
@@ -80,10 +81,10 @@ It is very easy to subscribe and react to those kind of events, thanks to RxJava
 
 
 
-DNS SRV Bootstrap
+##DNS SRV Bootstrap
 
 It is now possible to fetch the list of bootstrap nodes through a DNS SRV record. This allows system administrators to centralize their bootstrap node list config in a very easy manner. It needs to be enabled on the environment to make it work. You can find more information here.
 
-What's next?
+##What's next?
 
 While we already have many ideas for a 2.2 release, we are now taking a step back and are planning to further stabilize this branch with bugfix releases as needed. In addition, we are shifting the focus to enhanced framework and "up the stack" integration - so stay tuned in the next couple of weeks for blog posts and announcements!
