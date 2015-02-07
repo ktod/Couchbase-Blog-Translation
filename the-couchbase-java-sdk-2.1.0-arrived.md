@@ -38,7 +38,7 @@ dependency.xmlのリンク
 * タイムアウトやスキャン・コンシステンシのような、拡張されたクエリオプション。
 * 強化された、同期・非同期のQueryResultによりもたらされる、より柔軟なエラーハンドリング。
 
-サイモンが、素晴らしいブログポストを２週間前にポストしています、もしもこの点について詳しく知りたい方は、ぜひサイモンの<a href="http://blog.couchbase.com/n1ql-dp4-java-sdk">ブログ</a>をご参照ください。
+サイモンが、素晴らしいブログポストを２週間前にポストしています、もしもこの点について詳しく知りたい方は、ぜひサイモンの<a href="http://blog.couchbase.com/n1ql-dp4-java-sdk">ブログ</a>を参照してください。
 
 ##Spatial View Queryのサポート
 
@@ -68,9 +68,9 @@ Spatial Viewで定義できるデータフォーマットをベースにして�
 多数の方からリクエストされた機能として、リクエストを直ちにディスパッチすることが不可能である場合に、早期に失敗させる方法の提供というものがありました。例えば、ノード障害や、クラスタのフェールオーバの間、ドキュメントの一部（この対象となったノード上に存在する（ドキュメント集合全体のうちの）特定のパーティションについては全てのターゲット（ドキュメント））は、書き込むことができません。デフォルトでは、SDKは、少し後になって、オペレーションをリトライを試み、最終的には呼び出し側のタイムアウトに至るでしょう。
 
 新しい、フェール・ファーストモードでは、これまでに代わり、直ちにリクエストをキャンセルし、（リクエストがリトライすべきか否かを判断可能な）呼び出し側へ、より早期にフィードバック・ループを提供します。
-The new fail fast mode instead would immediately cancel the request, providing faster feedback loops to the caller who then can determine if the request should be retried or not. This new strategy can be enabled on the environment like this:
+この新しい戦略は、環境上で以下のようなことが可能になるでしょう：
 
-
+加えて、私たちは
 In addition, we made the retry strategy pluggable so you can even define your own. Since this is quite advanced it is not covered in this blog post, but you can expect more information soon in the documentation on that topic. In the meantime if you are curious, just check out the (quite simple) strategies that ship with the SDK.
 
 Finally, a configurable "maximum request lifetime" has been added to the environment which is utilized by the default "best effort" strategy to determine if the request should still be retried or is cancelled instead. This is needed in order to avoid requests circling around for a very long time and take up precious slots in the RingBuffers.
