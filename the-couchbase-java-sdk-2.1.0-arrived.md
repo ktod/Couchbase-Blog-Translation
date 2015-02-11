@@ -77,17 +77,18 @@ Spatial Viewで定義できるデータフォーマットをベースにして�
 これは、リクエストが非常に長い間繰り返されるのを回避するために、そしてリングバッファ内の貴重なスロットを巻き取るために必要です。
 
 ##Subscribable Event Bus
+アプリケーションのサブスクライバに対して、コアとクライアントでイベントを発行するために使用できるジェネリック・イベントバス(A generic event bus)が環境に追加されました。
+現在、Bucketのオープン／クローズと、ノードの接続／切断イベントのみ発行されます。しかし、将来的には、パフォーマンス測定値や他のタイプのイベントやワーニングを発行するように、ジェネリック・イベント使用を大幅に拡大させてゆく計画です。
 
-A generic event bus has been added to the environment which is utilized by the core and the client to publish events to potential application subscribers. Currently, only Bucket open/close and Node connect/disconnect events are published, but in the future we plan to greatly extend this by also collecting and publishing performance metrics and other types of events and warnings.
-
-It is very easy to subscribe and react to those kind of events, thanks to RxJava and the streaming nature of our Observables:
-
+これはサブスクライブや、この種のイベントに対してリアクトすることが非常に容易で、RxJavaや我々のObservablesのストリーミング特性の恩恵を享受できます。
 
 
 ##DNS SRV Bootstrap
+DNS SRVレコードを通して、Bootstrapノードのリストをフェッチすることが可能になりました。
+これは、システム管理者が、非常に簡単な手続きで、ブーロラップリストを中央管理することを可能にします。
+Couchbase Serverの設定を変更してこの機能を有効にする必要があります。以下の情報を参照ください。
 
-It is now possible to fetch the list of bootstrap nodes through a DNS SRV record. This allows system administrators to centralize their bootstrap node list config in a very easy manner. It needs to be enabled on the environment to make it work. You can find more information here.
 
 ##What's next?
-
-While we already have many ideas for a 2.2 release, we are now taking a step back and are planning to further stabilize this branch with bugfix releases as needed. In addition, we are shifting the focus to enhanced framework and "up the stack" integration - so stay tuned in the next couple of weeks for blog posts and announcements!
+私たちは、2.2リリースに向けて多くのアイデアを持っています。私は、このブランチの安定化に向けた必要なバグフィックスについても計画を進めています。加えて、さらにエンハンスされたフレームワークにシフトし、機能のインテグレーションを積み重ね（up the stack）ています。
+引き続き今後のブログポスト／アナウンスにご注目ください。
